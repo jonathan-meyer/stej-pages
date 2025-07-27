@@ -23,7 +23,7 @@ const Pages = ({ children, className, ...props }: PagesProps) => {
           label: child.props.label ?? "",
           hidden: child.props.hideFromMenu,
         })),
-    [children]
+    [children],
   );
 
   const pages = useMemo(
@@ -31,7 +31,7 @@ const Pages = ({ children, className, ...props }: PagesProps) => {
       Children.toArray(children)
         .filter((child) => isPage(child))
         .map((child) => child.props),
-    [children]
+    [children],
   );
 
   const header = useMemo(
@@ -39,7 +39,7 @@ const Pages = ({ children, className, ...props }: PagesProps) => {
       Children.toArray(children)
         .filter((child) => isHeader(child))
         .at(0)?.props.children,
-    [children]
+    [children],
   );
 
   const footer = useMemo(
@@ -47,7 +47,7 @@ const Pages = ({ children, className, ...props }: PagesProps) => {
       Children.toArray(children)
         .filter((child) => isFooter(child))
         .at(0)?.props.children,
-    [children]
+    [children],
   );
 
   const pageCount = useMemo(() => pages.length, [pages]);
