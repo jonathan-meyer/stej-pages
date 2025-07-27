@@ -1,16 +1,34 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Example from "./Example";
+import { MemoryRouter } from "react-router";
+import Page from "../Page";
+import Pages from "../Pages";
 
-const meta: Meta<typeof Example> = {
+const meta: Meta<typeof Pages> = {
   title: "Pages",
-  component: Example,
+  component: Pages,
+  tags: ["autodocs"],
+
+  render: ({ children }) => (
+    <MemoryRouter>
+      <Pages>{children}</Pages>
+    </MemoryRouter>
+  ),
 };
 
 export default meta;
-type Story = StoryObj<typeof Example>;
+type Story = StoryObj<typeof Pages>;
 
-export const Primary: Story = {
+export const OnePage: Story = {
   args: {
-    onClick: () => console.log("Button"),
+    children: <Page label="Example">Hello Storybook</Page>,
+  },
+};
+
+export const TwoPages: Story = {
+  args: {
+    children: [
+      <Page label={"One"}>Hello Storybook Page 1</Page>,
+      <Page label={"Two"}>Hello Storybook Page 2</Page>,
+    ],
   },
 };
