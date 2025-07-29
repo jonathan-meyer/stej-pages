@@ -1,5 +1,5 @@
 {
-  "name": "stej-pages",
+  "name": "@stej/stej-pages",
   "version": "1.0.0",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
@@ -24,8 +24,11 @@
       "npm run test"
     ]
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@stej"
+  },
   "keywords": [],
-  "author": "",
+  "author": "Jonathan Meyer (jon@stej.com)",
   "license": "ISC",
   "description": "",
   "devDependencies": {
