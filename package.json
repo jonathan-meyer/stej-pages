@@ -24,9 +24,6 @@
       "npm run test"
     ]
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@stej"
-  },
   "keywords": [],
   "author": "Jonathan Meyer (jon@stej.com)",
   "license": "ISC",
