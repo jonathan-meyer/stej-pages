@@ -1,9 +1,9 @@
-name: publish on github
+name: Publish to NPM
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   publish-gpr:
