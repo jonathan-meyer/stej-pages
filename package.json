@@ -26,6 +26,9 @@
   },
   "keywords": [],
   "author": "Jonathan Meyer (jon@stej.com)",
+  "repository": {
+    "url": "https://github.com/jonathan-meyer/stej-pages"
+  },
   "license": "ISC",
   "description": "",
   "devDependencies": {
