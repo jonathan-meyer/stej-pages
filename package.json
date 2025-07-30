@@ -1,6 +1,6 @@
 {
   "name": "@stej/stej-pages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -25,12 +25,13 @@
     ]
   },
   "keywords": [],
-  "author": "Jonathan Meyer (jon@stej.com)",
+  "author": "Jonathan Meyer",
   "repository": {
-    "url": "https://github.com/jonathan-meyer/stej-pages"
+    "type": "github",
+    "url": "git@github.com:jonathan-meyer/stej-pages.git"
   },
   "license": "ISC",
-  "description": "",
+  "description": "Utility module to simplify @react-spring/parallax",
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@react-spring/parallax": "^10.0.1",
