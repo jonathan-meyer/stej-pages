@@ -1,6 +1,6 @@
 {
-  "name": "@stej/stej-pages",
-  "version": "1.0.1",
+  "name": "@stej/pages",
+  "version": "1.0.2",
   "main": "dist/index.cjs.js",
   "module": "dist/index.es.js",
   "types": "dist/index.d.ts",
@@ -32,9 +32,11 @@
   },
   "license": "ISC",
   "description": "Utility module to simplify @react-spring/parallax",
+  "dependencies": {
+    "@react-spring/parallax": "^10.0.1"
+  },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
-    "@react-spring/parallax": "^10.0.1",
     "@storybook/addon-docs": "^9.0.17",
     "@storybook/react-vite": "^9.0.17",
     "@testing-library/jest-dom": "^6.6.3",
@@ -44,7 +46,6 @@
     "@types/react-syntax-highlighter": "^15.5.13",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@typescript-eslint/parser": "^8.38.0",
-    "bootstrap": "^5.3.7",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.3",
@@ -58,7 +59,6 @@
     "jsdom": "^26.1.0",
     "lint-staged": "^16.1.2",
     "prettier": "^3.6.2",
-    "react-bootstrap": "^2.10.10",
     "react-bootstrap-icons": "^1.11.6",
     "react-syntax-highlighter": "^15.6.1",
     "storybook": "^9.0.17",
@@ -70,7 +70,10 @@
     "vitest": "^3.2.4"
   },
   "peerDependencies": {
+    "bootstrap": "^5.3.7",
+    "classnames": "^2.5.1",
     "react": "^19.1.0",
+    "react-bootstrap": "^2.10.10",
     "react-router": "^7.7.0"
   }
 }
